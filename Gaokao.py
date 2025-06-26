@@ -129,7 +129,7 @@ with st.sidebar:
         model_options = ['deepseek-chat', 'deepseek-v2']
 
     model_name = st.selectbox("AI模型", options=model_options)
-    api_key = st.st.secrets['API_KEY']
+     api_key = st.text_input("API密钥", type="password", help="请输入有效的API访问密钥")
     
     st.divider()
     st.header("📋 考生档案")
